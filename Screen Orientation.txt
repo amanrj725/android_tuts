@@ -1,0 +1,18 @@
+AndroidManifiest.xml
+<activity>
+android:configChanges="orientation|screenSize"
+</activity>
+
+MainActivity.java
+public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+
+        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            Log.d("TEST","Welcome to portrait mode");
+        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            Log.d("TEST","Welcome to portrait mode");
+          
+        }
+
+    }
